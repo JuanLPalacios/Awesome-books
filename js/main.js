@@ -1,4 +1,4 @@
-const books = [
+let books = [
   { title: 'Lorem', author: 'someone' },
   { title: 'Lorem2', author: 'someone' },
   { title: 'Lorem3', author: 'someone' },
@@ -14,14 +14,23 @@ function updateList() {
           </ul>
       </li>`,
   ).join('');
-  document.getElementById('books-list').querySelectorAll('butons').forEach((btn) => {
+
+  let newBooks  = JSON.stringify(books);
+  localStorage.setItem('books',newBooks);
+
+  document.getElementById('books-list').querySelectorAll('button').forEach((btn, i) => {
     btn.addEventListener('click', () => {
       // here is the remove logic
+       books = books.filter((book, k) => i !== k);
+       updateList();
     });
   });
 }
 
 window.addEventListener('load', () => {
+  let newBooks2 = localStorage.getItem('books');
+
+  books = JSON.parse(newBooks2);
   updateList();
   var btnAdd = document.querySelector('.btnAdd');
   btnAdd.addEventListener("click", (e) => {
