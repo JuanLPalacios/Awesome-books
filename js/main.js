@@ -15,30 +15,30 @@ function updateList() {
       </li>`,
   ).join('');
 
-  let newBooks  = JSON.stringify(books);
-  localStorage.setItem('books',newBooks);
+  const newBooks = JSON.stringify(books);
+  localStorage.setItem('books', newBooks);
 
   document.getElementById('books-list').querySelectorAll('button').forEach((btn, i) => {
     btn.addEventListener('click', () => {
       // here is the remove logic
-       books = books.filter((book, k) => i !== k);
-       updateList();
+      books = books.filter((book, k) => i !== k);
+      updateList();
     });
   });
 }
 
 window.addEventListener('load', () => {
-  let newBooks2 = localStorage.getItem('books');
+  const newBooks2 = localStorage.getItem('books');
 
   books = JSON.parse(newBooks2);
   updateList();
-  var btnAdd = document.querySelector('.btnAdd');
-  btnAdd.addEventListener("click", (e) => {
+  const btnAdd = document.querySelector('.btnAdd');
+  btnAdd.addEventListener('click', (e) => {
     e.preventDefault();
-    var form = document.getElementById("form");
-    var title = form.title.value;
-    var author = form.author.value;
-    var book = { title, author };
+    const form = document.getElementById('form');
+    const title = form.title.value;
+    const author = form.author.value;
+    const book = { title, author };
     books.push(book);
     updateList();
   });
