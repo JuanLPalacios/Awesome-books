@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Awesome Books</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.ccs'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src='js/main.js'></script>
 </head>
+
 <body>
+    <h1>Awesome Books</h1>
+    <ul id="books-list">
+        <li>
+            title
+            <ul>
+                <li>description</li>
+                <li><button type="button">Remove</button></li>
+            </ul>
+        </li>
+    </ul>
+    <form action="#" id="form">
+        <input type="text" class="title" id="title">
+        <input type="text" class="author" id="author">
+        <button class="btnAdd">Add</button>
+    </form>
 </body>
+
 </html>
