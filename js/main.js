@@ -9,7 +9,7 @@ function updateList() {
     (x) => `<li>
           ${x.title}
           <ul>
-              <li>${x.title.author}</li>
+              <li>${x.author}</li>
               <li><button type="button">Remove</button></li>
           </ul>
       </li>`,
@@ -23,4 +23,14 @@ function updateList() {
 
 window.addEventListener('load', () => {
   updateList();
+  var btnAdd = document.querySelector('.btnAdd');
+  btnAdd.addEventListener("click", (e) => {
+    e.preventDefault();
+    var form = document.getElementById("form");
+    var title = form.title.value;
+    var author = form.author.value;
+    var book = { title, author };
+    books.push(book);
+    updateList();
+  });
 });
