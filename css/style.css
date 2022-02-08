@@ -8,7 +8,6 @@ body {
 
 h6 {
   margin: auto 5px;
-
 }
 
 .heading,
@@ -30,16 +29,14 @@ hr {
   text-align: left;
 }
 
-
 #books-list li {
   display: grid;
   grid-template-columns: auto 80px;
   padding-right: 10px;
 }
 
-
 #books-list li:nth-child(2n+1) {
-  background-color: #d3d3d3;;
+  background-color: #d3d3d3;
 }
 
 #form {
