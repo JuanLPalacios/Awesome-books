@@ -7,11 +7,8 @@ let books = [
 function updateList() {
   document.getElementById('books-list').innerHTML = books.map(
     (x) => `<li>
-          ${x.title}
-          <ul>
-              <li>${x.author}</li>
-              <li><button type="button">Remove</button></li>
-          </ul>
+             <h6>"${x.title}"  by ${x.author} </h6>
+              <button type="button">Remove</button>
       </li>`,
   ).join('');
 

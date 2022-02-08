@@ -1,3 +1,56 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  text-align: center;
+}
+
+h6 {
+  margin: auto 5px;
+
+}
+
+.heading,
+h2 {
+  font-family: 'Rowdies', cursive;
+  font-size: 30px;
+}
+
+hr {
+  width: 15%;
+  margin-top: 20px;
+}
+
+#books-list {
+  padding: 0;
+  border: 2px solid;
+  width: 40%;
+  margin: auto;
+  text-align: left;
+}
+
+
+#books-list li {
+  display: grid;
+  grid-template-columns: auto 80px;
+  padding-right: 10px;
+}
+
+
+#books-list li:nth-child(2n+1) {
+  background-color: #d3d3d3;;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  gap: 10px;
+}
+
+.btnAdd {
+  /* width: 30%; */
+  align-self: flex-end;
+}
