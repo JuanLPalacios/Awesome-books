@@ -69,6 +69,8 @@ hr {
   width: 40%;
   margin: auto;
   text-align: left;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 #books-list li {
@@ -90,7 +92,6 @@ hr {
 }
 
 .btnAdd {
-  /* width: 30%; */
   align-self: flex-end;
 }
 
@@ -100,4 +101,14 @@ section {
 
 section.active {
   display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  width: calc(100% - 20px);
+}
+
+.time {
+  text-align: right;
 }
