@@ -14,7 +14,7 @@ class BookList {
     window.addEventListener('load', () => {
       this.loaded = true;
       const btnAdd = document.querySelector('.btnAdd');
-      let currentDate = new Date();
+      const currentDate = new Date();
       document.querySelector('.time').innerHTML = currentDate;
       btnAdd.addEventListener('click', (e) => {
         e.preventDefault();

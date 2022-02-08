@@ -12,6 +12,9 @@ section#contact p {
 footer {
   border: solid 3px black;
   padding: 5px;
+  position: fixed;
+  bottom: 5px;
+  width: calc(100% - 20px);
 }
 
 h1.logo {
@@ -101,12 +104,6 @@ section {
 
 section.active {
   display: block;
-}
-
-footer {
-  position: fixed;
-  bottom: 5px;
-  width: calc(100% - 20px);
 }
 
 .time {
