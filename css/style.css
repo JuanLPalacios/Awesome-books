@@ -93,3 +93,11 @@ hr {
   /* width: 30%; */
   align-self: flex-end;
 }
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
