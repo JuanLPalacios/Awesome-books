@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://juanlpalacios.github.io/Awesome-books-with-ES6/)
+[Live Demo Link](https://juanlpalacios.github.io/Awesome-books/)
 
 ## Author
 
