@@ -9,7 +9,6 @@
 - HTML
 - CSS
 - JavaScript
-- luxon
 
 ## Live Demo
 
